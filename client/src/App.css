@@ -1,0 +1,243 @@
+
+.contain-table {
+  margin: 20px;
+  direction: rtl;
+  margin: 0 auto; /* This centers the container horizontally */
+  width: 95%; /* Adjust the width of the container as needed */
+  
+}
+  
+  
+
+
+.striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.striped-table th{
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+  
+
+}
+.striped-table td {
+  padding: 10px;
+  text-align: center;
+  
+  
+}
+
+.striped-table th {
+  background-color: #f3eaf3;
+  font-weight: bold;
+}
+
+.c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25%;
+}
+
+.striped-table tbody tr:nth-child(even) {
+  background-color: #ece8f5;
+}
+
+.striped-table tbody tr:hover {
+  background-color: #ddd0f7;
+}
+
+
+.button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; 
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.muted-button {
+  background-color: #6c757d;
+}
+
+.muted-button:hover {
+  background-color: #5a6268;
+}
+
+
+
+
+
+
+
+
+
+/*********************/
+
+
+table{ direction: rtl;}
+
+.contain-table {
+  direction: rtl;
+}
+
+
+  .cell {
+  display: table-cell; /* استخدم عنصر الخلية */
+  color: rgb(8, 1, 1); /* Text color for better readability */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 8px;
+  text-align: center;
+  border: 1.5px solid #63046b; /* Add border */
+  }
+
+ 
+ 
+  
+  .tbody{
+  background: whitesmoke ;
+  }
+  
+  
+
+  
+.small-container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease; /* تأثير التحويل على جميع الخصائص بمدة 0.3 ثانية */
+}
+
+
+
+
+.small-container .user-details .gender{
+      display: flex;
+
+}
+
+.radio {
+  margin-right: 8px; /* تعديل المسافة حسب الحاجة */
+}
+
+.radio1 {
+margin-right: 25px; /* تعديل المسافة حسب الحاجة */
+}
+
+
+/* الصورة كخلفية */
+body {
+margin: 0;
+padding: 0;
+/* background-image: url('logo.png'); /* استبدال 'background.jpg' بمسار الصورة الفعلي */
+background: linear-gradient(135deg , #71b7e6 , #9b59b6);  /* لون الخلفية للسيستم ككل */
+background-size: cover; /* لتغطية المساحة بالكامل بالصورة */
+background-position: center; 
+/**  background-size:contain; */
+font-family: Arial, sans-serif;
+background-color: #f4f4f4; /* لون خلفية متوسط */
+}
+
+.small-container {
+/*background-color: rgba(255, 255, 255, 0.7); /* تعيين لون خلفية للنموذج مع شفافية */
+padding: 20px;
+border-radius: 20px;
+margin: 60px auto; /* توسيط النموذج في الصفحة */
+width: 700px;
+
+}
+
+
+
+
+
+/*
+.round-button {
+background-color: #007bff; 
+; 
+
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+*/
+
+.round-button:hover {
+background-color: #6f42c1; /* لون خلفية الزر */
+
+}
+
+
+/**
+.pay{
+display: flex;
+}  */
+
+.pay{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* يقسم الشريط إلى عمودين متساويين */
+  gap: 10px; /* تضبيط المسافة بين الخانتين */
+
+}
+
+.n {
+display: flex;/* تعديل المسافة حسب الحاجة */
+}
+
+.n1{
+margin-right: 145px; 
+}
+
+
+.n11{
+margin-right: 205px; 
+}
+
+
+.n111{
+margin-right: 225px; 
+}
+
+/* styles.css */
+
+/* تعريف تأثير الظهور للنموذج */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* تطبيق تأثير الظهور على النموذج */
+.form {
+animation: fadeIn 1.5s ease forwards;
+}
+
+
+.hover-zoom:hover {
+  transform: scale(1.04); /* تكبير الحجم بنسبة 10% عند التحويل */
+}
+
+

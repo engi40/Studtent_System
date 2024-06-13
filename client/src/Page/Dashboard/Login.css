@@ -1,0 +1,93 @@
+.containerr {
+  
+    background-image: url('../images/login.jpg');
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h2 {
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #4d083e;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #0a0a0a;
+  }
+  
+  .login-form {
+    position: relative;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .form-group .highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transform-origin: bottom left;
+    transition: width 0.3s ease;
+  }
+  
+  .form-group input:focus + .highlight {
+    width: 100%;
+  }
+
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+.boxx {
+  width: 350px;
+  height: 300px;
+  border: 2px solid #360557;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  transition: background-color 0.3s ease, transform 0.3s;
+  background-color: blueviolet;
+  box-shadow: 0 0 20px rgba(8, 9, 50, 50);
+  
+  background-image: url('../images/7d727424066bac37ea7b88446a9fee6f.jpg');
+  
+}
+
+
+
+.boxx a {
+  text-decoration: none; /* إزالة الخط السفلي من الرابط داخل الزر */
+}
+
+.boxx:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}

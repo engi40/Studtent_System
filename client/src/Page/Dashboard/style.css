@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #360557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    background-color: blueviolet;
+    box-shadow: 0 0 20px rgba(8, 9, 50, 50);
+    
+    background-image: url('../images/7d727424066bac37ea7b88446a9fee6f.jpg');
+    
+}
+
+
+
+.box a {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط داخل الزر */
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+.boxo {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #360557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    background-color: blueviolet;
+    box-shadow: 0 0 20px rgba(8, 9, 50, 50);
+    
+    background-image: url('../images/7d727424066bac37ea7b88446a9fee6f.jpg');
+    
+}
+
+
+
+.boxo a {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط داخل الزر */
+}
+
+.boxo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+    
+.highlighted {
+    background-color: lightgray;
+}
+
+
+
+
+.background-slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 29s linear infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1; /* start with full opacity */
+  }
+  
+  @keyframes changeBackground {
+    0% { opacity: 2; background-image: url('../images/background1.jpg');}
+    14.29% { opacity: 1; background-image: url('../images/background1.jpg'); }
+    28.57% { opacity: 1; background-image: url('../images/background2.jpg'); }
+    42.86% { opacity: 1; background-image: url('../images/background2.jpg'); }
+    57.14% { opacity: 1; background-image: url('../images/background3.jpg'); }
+    71.43% { opacity: 1; background-image: url('../images/background3.jpg'); }
+    85.71% { opacity: 1; background-image: url('../images/background3.jpg'); }
+    100% { opacity: 1; background-image: url('../images/background1.jpg');}
+}
+
+
+
+
+
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none; /* لإزالة الخط السفلي */
+}
+
+.logout-button {
+    /* إضافة أي أنماط إضافية للزر */
+    text-decoration: none; /* لإزالة الخط السفلي */
+}
