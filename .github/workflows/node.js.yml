@@ -22,10 +22,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: |
+          cachedPath=$(pnpm store path --silent)
+          echo "cached path is $cachedPath"
+          [ -d "$cachedPath" ] && echo "Directory $cachedPath exists."
     - name: build
       run: npm run test --if-present
       env: 
