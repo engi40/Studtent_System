@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.3",
+    "react-to-print": "^2.15.1",
+    "sweetalert2": "^11.10.5"
+  }
+}
